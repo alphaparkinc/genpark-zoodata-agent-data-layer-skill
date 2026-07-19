@@ -1,0 +1,31 @@
+{
+  "name": "genpark-zoodata-agent-data-layer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - ZooData-like structured real-time data layer provider for AI agents.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "data",
+    "agents",
+    "real-time",
+    "zoodata"
+  ],
+  "inputs": {
+    "data_query": {
+      "type": "string"
+    },
+    "data_category": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "structured_records": {
+      "type": "array"
+    },
+    "freshness_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
